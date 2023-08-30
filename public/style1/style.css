@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5% 5%;
+}
+
+header div {
+    display: flex;
+    padding-left: 5%;
+    color: red;
+}
+
+.contact {
+    display: flex;
+    margin: 0px;
+
+}
+
+h3::before {
+    content: "•";
+    color: red;
+    font-size: 50px;
+    vertical-align: middle;
+}
+.skills-secondary::before {
+    content: "Others";
+}
+.skills-primary::before {
+    content: "Main";
+
+}
+h3 {
+    border-bottom: 1px solid rgb(187, 187, 187)
+}
+
+.skill {
+    background-color: rgb(187, 187, 187);
+    margin: 3px;
+    height: 30px;
+}
+
+span {
+    display: inline-block;
+}
+
+.skill[data-skill="3"] span {
+    background-color: red;
+    width: 30%;
+    margin: 5px;
+    padding: 1px;
+}
+
+.skill[data-skill="5"] span {
+    background-color: red;
+    width: 50%;
+    margin: 5px;
+    padding: 1px;
+}
+
+.skill[data-skill="7"] span {
+    background-color: red;
+    width: 70%;
+    margin: 5px;
+    padding: 1px;
+}
+
+.skill[data-skill="9"] span {
+    background-color: red;
+    width: 90%;
+    margin: 5px;
+    padding: 1px;
+}
+
+.skill[data-skill="1"] span {
+    background-color: red;
+    width: 90%;
+    margin: 5px;
+    padding: 1px;
+}
+
+#wrapper {
+    position: relative;
+}
+
+#contact {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 50%;
+    height: 100px;
+    color: red;
+    background-color: black;
+}
+
+#contact h3 {
+    display: none;
+}
+
+dt {
+    width: 108px;
+    background-color: red;
+    color: white;
+}
+a{
+    color: red;
+}
+figure img{
+    width: 110px;
+    height: 110px;
+}
+@media only screen and (max-width: 800px)  {
+    .content {
+        grid-template-columns: 100%;
+        margin: 5% 5%;
+    }
+    #contact {
+        position:static;
+        width: 50%;
+        height: 100px;
+        color: red;
+        color: black;
+        background-color: white;
+    }
+    #contact h3 {
+        display: block;
+    }
+    .skills-secondary{
+        margin-left: 0;
+    }
+}
